@@ -1,0 +1,9 @@
+SPRITE
+object.y=1.2
+object.width=2.4
+object.height=2.4
+texture.id=2
+frame.width=64
+frame.height=64
+frame.count=16
+frame.rate=24

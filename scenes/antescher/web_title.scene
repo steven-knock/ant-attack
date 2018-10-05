@@ -1,0 +1,193 @@
+[Ant Attack Scene]
+Entity Count=21
+Sun.Latitude=-57
+Sun.Longitude=-24
+
+[Entity 1]
+EntityType.ID=0
+Location.x=55.3
+Location.y=0
+Location.z=24.5
+Orientation=75
+Animation.Sequence=4
+Animation.Time=0.27
+
+[Entity 2]
+EntityType.ID=1
+Location.x=55.6
+Location.y=0
+Location.z=24.2
+Orientation=70
+Animation.Sequence=4
+Animation.Time=0.27
+
+[Entity 3]
+EntityType.ID=2
+Location.x=50
+Location.y=0
+Location.z=23
+Orientation=74
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 4]
+EntityType.ID=2
+Location.x=48.5
+Location.y=0
+Location.z=22.2
+Orientation=70
+Animation.Sequence=1
+Animation.Time=0.23
+
+[Entity 5]
+EntityType.ID=2
+Location.x=52.5
+Location.y=0
+Location.z=20.4
+Orientation=33
+Animation.Sequence=1
+Animation.Time=0.6
+
+[Entity 6]
+EntityType.ID=2
+Location.x=15.2
+Location.y=0
+Location.z=6
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 7]
+EntityType.ID=2
+Location.x=16.4
+Location.y=0
+Location.z=3.5
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 8]
+EntityType.ID=2
+Location.x=18
+Location.y=0
+Location.z=3
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 9]
+EntityType.ID=2
+Location.x=20.5
+Location.y=0
+Location.z=4
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 10]
+EntityType.ID=2
+Location.x=17.9
+Location.y=0
+Location.z=8.5
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 11]
+EntityType.ID=2
+Location.x=22.3
+Location.y=0
+Location.z=5.6
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 12]
+EntityType.ID=2
+Location.x=25.5
+Location.y=0
+Location.z=9.8
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 13]
+EntityType.ID=2
+Location.x=27.3
+Location.y=0
+Location.z=12.3
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.6
+
+[Entity 14]
+EntityType.ID=2
+Location.x=29.6
+Location.y=0
+Location.z=16.5
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.5
+
+[Entity 15]
+EntityType.ID=2
+Location.x=34.8
+Location.y=0
+Location.z=14.8
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.4
+
+[Entity 16]
+EntityType.ID=2
+Location.x=36.6
+Location.y=0
+Location.z=15.3
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.3
+
+[Entity 17]
+EntityType.ID=2
+Location.x=39.4
+Location.y=0
+Location.z=18.5
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.2
+
+[Entity 18]
+EntityType.ID=2
+Location.x=42.4
+Location.y=0
+Location.z=17.4
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.4
+
+[Entity 19]
+EntityType.ID=2
+Location.x=44.4
+Location.y=0
+Location.z=18.3
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.3
+
+[Entity 20]
+EntityType.ID=2
+Location.x=46.8
+Location.y=0
+Location.z=22.5
+Orientation=65
+Animation.Sequence=1
+Animation.Time=0.2
+
+[Entity 21]
+EntityType.ID=2
+Location.x=52.8
+Location.y=0
+Location.z=24.5
+Orientation=76
+Animation.Sequence=1
+Animation.Time=0.4

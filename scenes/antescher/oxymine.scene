@@ -1,0 +1,58 @@
+[Ant Attack Scene]
+Entity Count=6
+Sun.Longitude=25
+Sun.Latitude=-42
+
+[Entity 1]
+EntityType.ID=0
+Location.x=74.3
+Location.y=3.5
+Location.z=61.6
+Orientation=3
+Animation.Sequence=9
+Animation.Time=0.1
+
+[Entity 2]
+EntityType.ID=1
+Location.x=74.7
+Location.y=3.3
+Location.z=61.6
+Orientation=0
+Animation.Sequence=9
+Animation.Time=0.1
+
+[Entity 3]
+EntityType.ID=2
+Location.x=75
+Location.y=0
+Location.z=62
+Orientation=264
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 4]
+EntityType.ID=2
+Location.x=75.8
+Location.y=0
+Location.z=61.4
+Orientation=270
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 5]
+EntityType.ID=2
+Location.x=75.7
+Location.y=0
+Location.z=62.7
+Orientation=250
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 6]
+EntityType.ID=2
+Location.x=73
+Location.y=0
+Location.z=61
+Orientation=90
+Animation.Sequence=0
+Animation.Time=0

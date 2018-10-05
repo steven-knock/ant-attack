@@ -1,0 +1,78 @@
+# Note: FOV = 65; Far Plane = 59
+
+[Ant Attack Scene]
+Entity Count=8
+Sun.Latitude=-33
+Sun.Longitude=35
+
+[Entity 1]
+EntityType.ID=0
+Location.x=35.7
+Location.y=0
+Location.z=80.5
+Orientation=200
+Animation.Sequence=6
+Animation.Time=0.2
+
+[Entity 2]
+EntityType.ID=1
+Location.x=35.9
+Location.y=0
+Location.z=79.4
+Orientation=230
+Animation.Sequence=11
+Animation.Time=0.17
+
+[Entity 3]
+EntityType.ID=2
+Location.x=35.1
+Location.y=0
+Location.z=79.7
+Orientation=15
+Animation.Sequence=2
+Animation.Time=0.1
+
+[Entity 4]
+EntityType.ID=2
+Location.x=32.5
+Location.y=0
+Location.z=65
+Orientation=0
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 5]
+EntityType.ID=2
+Location.x=36.5
+Location.y=0
+Location.z=69
+Orientation=0
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 6]
+EntityType.ID=2
+Location.x=35.5
+Location.y=0
+Location.z=44.5
+Orientation=0
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 7]
+EntityType.ID=2
+Location.x=40.5
+Location.y=0
+Location.z=61.5
+Orientation=0
+Animation.Sequence=0
+Animation.Time=0
+
+[Entity 8]
+EntityType.ID=2
+Location.x=42.5
+Location.y=0
+Location.z=76.5
+Orientation=270
+Animation.Sequence=0
+Animation.Time=0

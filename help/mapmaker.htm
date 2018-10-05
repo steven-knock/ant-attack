@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang=en>
+	<head>
+		<title>Ant Attack Map Editor - User Guide</title>
+		<link href="antattack.css" rel="stylesheet" type="text/css">
+		<meta name="author" content="Steven Knock">
+		<meta name="description" content="A guide using the Ant Attack Map Editor.">
+	</head>
+	<body>
+		<a id="top"></a>
+		<h1>Ant Attack Map Editor &ndash; User Guide</h1>
+
+		<div class="content ant_eden">
+			<h2>Contents</h2>
+			<ol>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#open">Opening an existing map</a></li>
+				<li><a href="#view">Navigating around the map</a></li>
+				<li><a href="#blocks">Creating structures from blocks</a></li>
+				<li><a href="#special">Special blocks &ndash; water &amp; pillars</a></li>
+				<li><a href="#editing">Using the editing commands</a></li>
+				<li><a href="#singleplane">Working with a single editing plane</a></li>
+				<li><a href="#copypaste">Copying and pasting images</a></li>
+				<li><a href="#things">Starting points</a></li>
+				<li><a href="#mapprops">Map properties</a></li>
+				<li><a href="#leveldetail">Level detail</a></li>
+				<li><a href="#preview">3d preview</a></li>
+				<li><a href="#play">Playing the game</a></li>
+				<li><a href="#save">Saving the map</a></li>
+				<li><a href="#new">Creating an entirely new map</a></li>
+				<li><a href="#perimiter">Creating a perimiter around the map</a></li>
+				<li><a href="#game">Making the map available to Ant Attack</a></li>
+				<li><a href="#music">Adding music to your map</a></li>
+			</ol>
+		</div>
+
+		<div class="content watchtower">
+			<h2><a id="introduction"></a>Introduction</h2>
+			<p>The Map Maker is a fully-featured GUI editor that provides you with the tools to create entirely new maps that can be played by the Ant Attack game, or to amend existing maps.</p>
+			<p>Maps in Ant Attack are constructed of numerous cubic blocks that are arranged in a 3-dimensional grid that can extend to 1024 x 1024 blocks in width and depth. However, maps are limited to being 8 blocks high.</p>
+			<p>Onto this landscape of cubes, special markers are overlaid that indicate to the game the starting points for the Rescuer, the Rescuee and the Ants.</p>
+			<p>Each map can contain up to 64 different levels, which represent individual chapters in the game. Each level always takes place on the same landscape (the map), but other parameters can be changed for each level, such as the position of the sun, the degree of fogging, the number of ants, as well as the starting positions. It is quite possible to create an enormous map of mutually inaccessible regions that would represent each level, so that it feels to the player as though each level is taking place in a separate landscape.</p>
+			<p>A level is completed when the rescuer and the rescuee both move outside of the dimensions of the map. If the level contains no Rescuee, it is still quite playable, but the objective is simply for the Rescuer to make their way out of the map.</p>
+			<p>The Map Maker allows you to work on several maps at the same time, and to copy and paste between them, although only one 3d view can be open at once. For simplicity, almost all of the actions that are available on the menus are also available on the toolbar, and they naturally share the same images.</p>
+			<p>If you are skilled and patient enough to create your own maps, I would love to see them and, with your permission, to include them in the Ant Attack installation for the enjoyment and inspiration of players and architects alike.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		
+		<div class="content phospher_henge">
+			<h2><a id="open"></a>Opening an existing map</h2>
+			<p>To begin working with an existing map, simply click on the <img src="gfx/icon/open.gif"> button. You will be prompted to select the map file that you wish to open. Once chosen, it will be loaded and ready to edit.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content quai">
+			<h2><a id="view"></a>Navigating around the map</h2>
+			<p>The map is always represented in an isometric style, although the direction from which the map is viewed can be rotated by using the <img src="gfx/icon/rotatecw.gif"> and <img src="gfx/icon/rotateccw.gif"> buttons, or by pressing TAB and SHIFT + TAB.</p>
+			<p>The magnification of the map can be changed by using the <img src="gfx/icon/zoomin.gif"> and <img src="gfx/icon/zoomout.gif"> buttons, or by pressing CTRL + I and CTRL + U.</p>
+			<p>Blocks on the current editing plane are drawn in yellow, rather than the usual shades of gray. The editing plane is the 2d level on which all editing takes place. It can be adjusted by using the <img src="gfx/icon/leveltop.gif">, <img src="gfx/icon/levelup.gif">, <img src="gfx/icon/leveldown.gif">, and <img src="gfx/icon/levelbottom.gif"> buttons, or by pressing the PLUS and MINUS keys on the numeric key pad.</p>
+			<p>Some of these functions are more conveniently accessed by using the mouse-wheel together with different key combinations:
+				<ul>
+					<li>Mouse-wheel alone changes the editing plane.</li>
+					<li>Mouse-wheel + SHIFT scrolls the map horizontally.</li>
+					<li>Mouse-wheel + CTRL scrolls the map vertically.</li>
+					<li>Mouse-wheel + SHIFT + CTRL adjusts the magnification of the map.</li>
+				</ul>
+			</p>
+			<p>The grid guidelines may be toggled on and off by using the&nbsp;<img src="gfx/icon/grid.gif"> button</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content table_antchair">
+			<h2><a id="blocks"></a>Creating structures from blocks</h2>
+			<p>Blocks, <img src="gfx/icon/block.gif">, may be placed on the map simply by clicking the left mouse button in the cell where you want the block to appear. The block's vertical position is governed by the current editing plane. Existing blocks may be removed by clicking the right mouse button over them. If you make a mistake, just press CTRL + Z or click on the Undo button, <img src="gfx/icon/undo.gif">. An unlimited number of changes can be undone in this way.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_forum">
+			<h2><a id="special"></a>Special blocks &ndash; water &amp; pillars</h2>
+			<p>Two other types of block may be placed in the map: water &amp; pillars, which can be actived by clicking on the <img src="gfx/icon/water.gif"> and <img src="gfx/icon/pillar.gif"> buttons respectively.</p>
+			<h3>Water</h3>
+			<p>If, during the game, either human's head is submerged in water, they will begin to drown, although they can both remain with their head above water if the water is only a single block deep. Deeper bodies of water require that a solid volume of water is created. Note, that the Map Maker will allow you to create water blocks suspended in mid-air, just as it allows blocks to be in mid-air; it is the responsibility of the architect to decide upon the appropriate physical realism of the map they are designing.</p>
+			<h3>Pillars</h3>
+			<p>Pillars are a legacy from an earlier version of the Map Maker, and as such they are not given first-class support by the game. They will be drawn correctly, and the humans will be able to jump on them and run over them, but they not receive special attention with respect to their shape, either in terms of collision handling or lighting. As such, if they are to be used at all, if is perhaps better to give them a more decorative role rather than allowing the player to interact too closely with them.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_anti_chamber">
+			<h2><a id="editing"></a>Using the editing commands</h2>
+			<p>The Map Maker features several powerful commands to simplify and accelerate the map building process. To use them, you must first designate an area of the map on which they are to operate, called the "selection area". To create a selection area, simply hold the left mouse button down and drag the mouse until you have draw the area you want. Note, that the selection area is drawn on the current editing plane, which can initially be somewhat confusing. Once the mouse button has been released, the selected area, and all of the blocks within it, are highlighted in blue. To select the entire map, click on the <img src="gfx/icon/selectall.gif"> button, or press CTRL + A.</p>
+			<p>Once you have selected an area the following commands become available:
+				<ul>
+					<li><img src="gfx/icon/cut.gif">,&nbsp;Cut: Copies the selection to the clipboard and removes it from the map.</li>
+					<li><img src="gfx/icon/copy.gif">,&nbsp;Copy: Copies the selection to the clipboard and leaves the selection unchanged.</li>
+					<li><img src="gfx/icon/paste.gif">,&nbsp;Paste: Copies what has previously been copied to the clipboard onto the selected area. If the selected area is smaller than the area that was copied, then it will be enlarged to fit the copied area. If the selected area is larged than the area that was copied, then the area being copied onto the map will repeat as many times as necessary to completely fill the selected area. This is a powerful feature and means that, for example, repeating wall sections can be drawn once, copied, and then pasted using the automatic repeat feature to complete an entire length of wall in one operation.</li>
+					<li><img src="gfx/icon/delete.gif">,&nbsp;Delete: Removes the selected area from the map.</li>
+					<li><img src="gfx/icon/raise.gif">,&nbsp;Raise and <img src="gfx/icon/lower.gif">,&nbsp;Lower: Shifts the selected area up or down a block at a time.</li>
+				</ul>
+			</p>
+			<p>The current selection area can be deselected by pressing the Escape key or by clicking on the middle mouse button.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content skaz_yandor">
+			<h2><a id="singleplane"></a>Working with a single editing plane</h2>
+			<p>A useful feature of the Map Maker is the ability to focus only on one vertical plane at a time. The&nbsp<img src="gfx/icon/plane.gif"> button toggles this mode on and off. When activated, only the yellow active plane is shown and all other blocks and map elements are hidden. This is especially useful for sculpting the insides of buildings that would otherwise be hidden.</p>
+			<p>The copy and paste operations also function slightly differently depending on whether the single plane mode is active when they are invoked. The behaviour should be intuitive, but it is explicitly described here.</p>
+			<h3>Copying:</h3>
+			<p>If all planes are visible, then all planes are copied to the clipboard. This is the normal behaviour.</p>
+			<p>If only a single plane is visible, then only the active plane is copied to the clipboard.</p>
+			<h3>Pasting:</h3>
+			<p>If all planes are visible and all planes were previously copied, then all planes are replaced by the clipboard contents. This is the normal behaviour.</p>
+			<p>If all planes are visible but only a single plane was previously copied, then the copied plane is replaced by the clipboard contents and all other planes are cleared.</p>
+			<p>If only a single plane is visible but all planes were previously copied, then the currently active plane is replaced with its corresponding plane from the clipboard. This is like a masking technique.</p>
+			<p>If only a single plane is visible and only a single plane was previously copied, then the copied plane is pasted over whatever plane is currently active. This is useful for repeating vertical slices, such as when building the walls of a building.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_pyramid">
+			<h2><a id="copypaste"></a>Copying and pasting images</h2>
+			<p>When a selection is copied to the clipboard, a visual representation of the map is also copied in the form of a gray-scale bitmap, where the intensity of the gray corresponds to the highest block in each column. This feature also works in reverse. If you have an image copied onto the clipboard, it can be pasted into the map in the usual way. For best results, use a gray-scale image, in which black corresponds to ground level, and white indicates a solid column of blocks. It should be noted that only solid columns of blocks are pasted into the map in this way, since there is no way to represent the full 3-dimensional nature of the map with only a 2-dimensional image. However, this feature can enable the framework of a map to be quickly developed in a drawing program and then imported into the Map Maker for refinement.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_ancient">
+			<h2><a id="things"></a>Starting points</h2>
+			<p>Starting points are markers that occupy a single cell in the map and specify where the Rescuer,&nbsp;<img src="gfx/icon/rescuer.gif">, Rescuee,&nbsp;<img src="gfx/icon/rescuee.gif"> and Ants,&nbsp;<img src="gfx/icon/ant.gif"> will start on each level. Starting points can be manipulated just like solid blocks, by first selecting them in the toolbar and then by clicking on the left and right mouse buttons to place and remove them. However, unlike blocks, they are not affected by copy and paste operations. Once a starting point has been placed on the map, it can be configured in more detail by double-clicking on it. This brings up a dialog box where the type and orientation of the starting point can be changed. Note in particular that there are two types of starting points for Ants: spawning points, which is where they emerge at random during the game, and pre-placed points, where an ant will be positioned at the start of the game.</p>
+			<p>Most usefully, the levels on which the starting point is active can be individually toggled on and off. This is an essential tool for shaping the difficulty of the game, so that rescuee points that are harder to reach are not used until later in the game.</p>
+			<p>It is not an error for there to be no rescuee point for a given level &ndash; in this case, the rescuer's objective becomes simply to escape from the map. If no rescuer start point is specified, then, at the beginning of the level, the player will be dropped over the centre point of the map.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content oxymine">
+			<h2><a id="mapprops"></a>Map properties</h2>
+			<p>The map properties dialog box,&nbsp;<img src="gfx/icon/mapprops.gif">, allows the variables that govern the map to be modified, rather than those that affect each level.</p>
+			<p>They are:
+				<ul>
+					<li>Title: The name of the map. Can be up to 64 characters, but should probably be less than 16 otherwise it may leak over the left and right edges of the screen in the game.</li>
+					<li>Width &amp; Height: The dimensions of the map. Can be up to 1024 in either dimension and need not be square. Changing the dimensions of the map is not undoable.</li>
+					<li>Hit Points: The initial "life force" of both the rescuer and the rescuee. Being bitten by an ant takes away 1 unit of life. Damage from explosions depends on proximity to the explosion.</li>
+					<li>Grenades: The number of grenades the rescuer is armed with at the start of each level.</li>
+					<li>Ant Hit Points: The initial "life force" of each ant.</li>
+					<li>Levels: The number of levels in the map. This can be changed dynamically, but lowering the number will cause all information about the lost levels to be discarded, including starting points, lighting and other parameters.</li>
+					<li>Restrict perspective to 1st person: Determines whether the player must play the map in 1st person perspective. This can be useful for indoor levels where the tracking camera becomes a distraction, and it can also be used to heighten the tension of the game.</li>
+					<li>Palette: This represents the four primary colours that are used to draw each map. The light &amp; dark colours are used to draw even and odd blocks respectively.</li>
+				</ul>
+			</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_monument">
+			<h2><a id="leveldetail"></a>Level detail</h2>
+			<p>The level detail dialog box presents a list of the parameters for each level of the map, and can be accessed by clicking on the&nbsp;<img src="gfx/icon/leveldetail.gif">&nbsp;button on the toolbar. The parameters can be modified by double clicking on a row in the list, or by selecting a row and clicking on the Edit button.</p>
+			<p>The parameters are:
+				<ul>
+					<li>Maximum ants: The total number of ants that can be alive at any one time in the map. Paralysed ants and pre-placed ants both count towards this number.</li>
+					<li>Spawn interval: The time, in seconds, between each ant appearing at a spawn point.</li>
+					<li>Draw distance: The number of blocks that will be drawn into the distance. If this number is at least 60, then the most distant 1/5th of the map is gradually faded out. If the draw distance is less than 60, then all of the blocks are subject to a fog effect, which begins at the camera and intensifies with distance.</li>
+					<li>Sun Latitude &amp; Longitude: these figures specify the sun's location in the sky, in degrees. 0, 0 degrees is directly over the centre of the map, while latitude corresponds to a north / south movement, and longitude corresponds to east / west.</li>
+				</ul>
+			</p>
+			<p>To move the sun smoothly from its position on the first level, to its position on the last level, click on the "Interpolate Light Position" button. This will cause the sun's position to be re-calculated for all of the in-between levels.</p>
+			<p>The "Build Light Maps" button saves the current settings and launches a process that, for each level, calculates all of the shadows cast by the sun over the entire map. Only levels whose light maps are out-of-date will be regenerated.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content argons_leap">
+			<h2><a id="preview"></a>3d preview</h2>
+			<p>The 3d preview,&nbsp;<img src="gfx/icon/preview.gif">, provides a free-roaming camera that can be flown around the entire map to view the architecture as it will appear in the game. It is especially useful to have open while creating the map, since it is updated in real-time as blocks are added and removed from the map. It also casts low-resolution shadows in real-time that can aid design and placement of the sun for each level.</p>
+			<p>The camera can be moved by using the cursor keys or W, S, A &amp; D. The camera's orientation can be changed by holding the left mouse button and moving the mouse, and the location of the sun can be altered by holding the right mouse button and moving the mouse.</p>
+			<p>The draw distance can also be changed dynamically, and the difference between the two different fogging modes can be observed as it crosses the fog threshold.</p>
+			<p>All of these values can be noted and applied in the level detail dialog box.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content artants_villa">
+			<h2><a id="play"></a>Playing the game</h2>
+			<p>At any point during the creation process, the current map can be played just as if it were launched from the main Ant Attack program by clicking on the play button,&nbsp;<img src="gfx/icon/play.gif">. The game may be paused at any time by pressing the pause key; this passes control back to the Map Maker application. The game window may also be closed by pressing the Escape key during the game.</p>
+			<p>In addition, there are two special keys that are not available when playing the game normally:
+				<ul>
+					<li>Pressing &apos;L&apos; skips to the next level.</li>
+					<li>Pressing &apos;M&apos; toggles the display of an overhead map of the game, by which the movement of all of the entities may be observed.</li>
+				</ul>
+			</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_antimatter_cube">
+			<h2><a id="save"></a>Saving the map</h2>
+			<p>All changes to the map can be saved by clicking on the save button,&nbsp;<img src="gfx/icon/save.gif">. This stores the map in a format that can be used by the game. If you wish to work with a map you have designed in your own projects, then the Export function on the File menu can be used to save the map in a format that easier to parse. It can save the map in one of several uncompressed formats, with an optional title and dimensions at the beginning of the file. Note, that no level or lighting information is stored in this format, and exported map files may not be re-imported back into the Map Maker.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content adriants_wall">
+			<h2><a id="new"></a>Creating an entirely new map</h2>
+			<p>If you feel particularly brave and ambitious, you may choose to create an entirely new map from scratch by clicking on the new button,&nbsp;<img src="gfx/icon/new.gif">. Upon doing so, the Map Properties dialog box will appear to prompt you for the initial dimensions and parameters of the map. Once these have been supplied, an empty map is created upon which a new scenario may be constructed.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content bonzai_walk">
+			<h2><a id="perimiter"></a>Creating a perimiter around the map</h2>
+			<p>Several pre-defined perimiters may be placed automatically around the map by clicking on the Create Perimiter button on the toolbar,&nbsp;<img src="gfx/icon/perimiter.gif">. The dialog box that appears allows one of seven different perimiter styles to be chosen, and its height adjusted. The action of applying a perimiter wall may be undone if the result is unsatisfactory.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_squarena">
+			<h2><a id="game"></a>Making the map available to Ant Attack</h2>
+			<p>To make customised maps available so that they may be chosen from within the Ant Attack game, simply save or copy them into the same folder as the Ant Attack program. All map files in this folder are loaded when Ant Attack starts up and presented to the player via the Choose Map section. Maps are presented in alphabetical order of their titles.</p>
+			<a class="top" href="#top"></a>
+		</div>
+
+		<div class="content the_crypt">
+			<h2><a id="music"></a>Adding music to your map</h2>
+			<p>When the Ant Attack game demonstrates the currently selected map by flying around it, it will attempt to play an MP3 file that has an identical file name to the map file, but, naturally, with an extension of .mp3 instead of .map. To provide a theme tune to your map, simply copy your chosen MP3 into the Ant Attack folder together with your map and rename the MP3 accordingly.</p>
+			<a class="top" href="#top"></a>
+		</div>
+	</body>
+</html>

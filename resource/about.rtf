@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fswiss\fprq2 Arial;}{\f1\fswiss\fprq2\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\qc\b\f0\fs28 Ant Attack Map Editor\par
+\fs22 Version \f1 1\f0 .\f1 3.7\f0  - \f1 20th April 2012\f0\fs24\par
+\pard\b0\fs20\par
+\b\i\fs22 Version \f1 1.3.7 - 20\i0 th April 2012\i\f0\par
+\b0\i0\fs20\par
+\b\f1 Updates\f0\par
+\b0\f1 . Allowed level skipping to take place in the game, rather than just in the editor. The Level Skip key has been changed to "L" from "Q".\par
+\f0\par
+\b\i\fs22 Version \f1 1.3.6 - 29\i0 th January 2009\i\f0\par
+\b0\i0\fs20\par
+\b\f1 Updates\f0\par
+\b0\f1 . Fixed problem when starting a level in the map-editor; the rescuee momentarily appeared standing up in the status area.\par
+. Added support for "HideStatus" entry in the Renderer.ini file.\par
+\f0\par
+\b\i\fs22 Version \f1 1.3.5 - \i0 27th January 2009\i\f0\par
+\b0\i0\fs20\par
+\b\f1 Updates\f0\par
+\b0\f1 . An Invulnerability mode has been made available when playing within the editor.\par
+\f0\par
+\b\i\fs22 Version \f1 1.3.4 - 28th October 2008\f0\par
+\b0\i0\fs20\par
+\b\f1 Updates\f0\par
+\b0\f1 . The configuration program now runs from a read-only medium. If detected, the configuration parameters are stored in the registry instead of trying to write to the INI file.\par
+\f0\par
+\b\i\fs22 Version \f1 1.3.3 - 18th July 2008\f0\par
+\b0\i0\fs20\par
+\b\f1 Updates\f0\par
+\b0\f1 . A bug affecting European players has been fixed. If the decimal seperator was set to be a comma, then the game would fail to read certain configuration files and be unable to start the game. Many thanks to Miquel, Franz G\'f6tz and especially Danilo Restani for helping me to track down this problem.\par
+. Invert Mouse functionality has been added, and can be activated by using the Configuration program.\par
+\f0\par
+\b\i\fs22 Version \f1 1.3 - 7th March 2008\f0\par
+\b0\i0\fs20\par
+\b Introduction\par
+\b0\f1 It's rather remarkable that a software project started 8.5 years ago has reached completion. As the notes below relate, the original Ant Attack Map Maker was begun in October 1999, and, via two or three sporadic bursts of programming, had progressed to a 3d rendered view of the level, with dynamic shadows, by the summer of 2007.\par
+\par
+At that stage, it was felt that 80% of the graphics work was complete and that there wasn't much more effort required to develop a working game around it. That was a particularly foolish underestimation. A player-controlled box and tracking camera was developed shortly afterwards, but then the project was put aside for 5 months until Christmas 2007. During three intense weeks, during which I barely saw another human, a large chunk of the game logic was developed, particularly the artificial intelligence, collisions, physics and general internal mechanics, although all of the entities were still rendered as boxes. Also during this time, the Map Maker was finished, with the cut, copy, paste, undo features all added, as well as tools for managing and customising each level. Another haitus followed the new year, but February 2008 saw the finalisation of the intelligence routines, the inclusion of the 3d models and animations, sound effects, and the multitude of little touches that make a game complete and which never seem to end. As part of all this, most of the graphics rendering routines were rewritten as well.\f0\par
+\par
+\b\f1 Implementation\par
+\b0 Both Ant Attack and the Map Maker were developed with Delphi 6, an old favourite of mine and still a great development environment for Windows-based applications. Open GL draws all the triangles, while Open AL is used to play the sound effects.\f0\par
+\par
+\b\f1 The Future\par
+\b0 This has been an exceptionally rewarding project. Particularly, the past 3 months, during which it has gone from being a primitive editor with a pretty renderer to a complete, playable and, dare I say it, rather fun game, complete with an integrated and fully-functional GUI editor. But enough is enough. And besides, I don't think anyone's yet made an adequate remake of Turbo Esprit...\b\par
+\b0\f0\par
+\b\i\fs22 Version 1.\f1 2 - 10th July 2007\f0\par
+\b0\i0\fs20\par
+\b Introduction\par
+\b0\f1 Ever since I began mentally playing an updated version of Ant Attack, I always wanted to replace the time limit in the original game with the setting of the sun\f0 .\f1  My belief was that the game would become progressively more difficult and claustrophobic as the shadows lengthened and darkness gradually enveloped the player, who would be driven to hysteria by the ceaseless chittering of the unseen ants lurking in the dark. I recently had a couple of free days, and so I thought it would be a good time to implement the shadows I had always longed to see and finally render the cursed city of Antescher as I had always imagined it.\f0\par
+\par
+\b\f1 Implementation\f0\par
+\b0\f1 To see a map rendered with shadows, you only need to open the Preview window and they will begin to appear automatically. The first time each surface is rendered, the shadow is calculated using a simple ray tracing algorithm and the resulting map of light and dark is remembered against the surface in compressed form. Areas of solid shadow are rendered simply by adjusting the colours, while areas containing partial shadows are rendered with a two-pass texture. Only a limited amount of time each frame is allocated to the ray-tracing, which is why the shadows appear progressively. If the light position is adjusted with the right mouse button all of the shadows are recalculated.\par
+\f0\par
+\b\f1 Limitations\f0\par
+\b0\f1 The shadows do not extend beyond the area of the map. The columns and water are not affected by the shadows. The low resolution (16 x 16) of the light maps can lead to some jaggies on the shadow edges. This artifact could be reduced by doubling the resolution of the light map, which is a trivial programming task, but which would have quadrupled the amount of ray tracing required. The current result is a trade off between speed and quality.\f0\par
+\par
+\b\i\fs22 Version 1.1\f1  - 12th August 2003\f0\par
+\b0\i0\fs20\par
+\b Introduction\par
+\b0 This version has been developed during the 11th and 12th of August, 2003. It has come about because the previous weekend I was fortunate enough to visit Bath in the west of England, and in particular the monumental Roman baths that have made the city internationally famous. At the centre of one of the first rooms in the musuem lies a large wooden model of how the Roman bath complex would have looked. It was made from wood over 100 years ago for the Paris exhibition, and is a beautiful piece of craftsmanship. It's minimilist style also resembles the kind of landscapes seen in Ant Attack, and so I begun contemplating whether or not I could reproduce the model of the Roman baths in my Ant Attack editor. The only necessary addition to allow a rough approximation was to add two more block types: pillars and water, both of which had coincidentally been in my original plan for the editor five years ago. Consequently, it didn't take much work to include them; most of the time was spent drawing the isometric images used in the editor.\par
+\par
+\b Using the New Block Types\par
+\b0 The caption of the current editing window now informs you which object you are drawing with: cubes, pillars or water. These can be selected either by typing their initial letter (C, P, or W) or by choosing one of them from the new Objects menu.\par
+\par
+\b 3d View\b0\par
+The 3d view has been fully updated to include support for both of the new block types, and an example map has been packaged with this version to demonstrate them. The rule behind the water rendering, is that a water block will cause a semi-transparent square to be drawn above it if there is no other water block above it. If the camera lies within a water block, then the entire scene will be drawn as if submerged.\par
+\par
+\b Other changes\par
+\b0 Several little aspects have been tweaked but the most significant addition is the new Export dialog. A surprising number of people have written to me to ask for information about the file-format I use to store the maps, and so I've included proper support for producing files that are more easily used by a downstream application.\par
+\par
+\par
+\b\i\fs22 Version 1.0\f1  - 20th February 2002\f0\par
+\b0\i0\fs20\par
+\b Introduction\b0\par
+This Map Editor was written during October 1999, when I was inspired to write a PC version of Ant Attack. Like 99% of coding projects, it was soon superseded by something new and more interesting and so it lay gathering dust on my hard disk for a couple of years. However, a couple of weeks ago, at the start of February 2002, I thought it might be fun to write a 3d renderer for Ant Attack. Since the Map Editor already had some useful functionality, it made sense to integrate the two.\par
+\par
+This is the result. The Map Editor itself has not changed since I left it over 2 years ago. In its present state, you can use it to create and save maps, and now fly around them, but I never got around to including the normal cut / copy / paste / undo operations which would make it easier to use. Despite this, it is probably a lot quicker than any tool Sandy White used when he wrote the original game back in 1983.\par
+\par
+\b Using the Map Editor\b0\par
+The Map Editor can work with several maps at once. Each map can be viewed from four angles, just like in the original game. The blocks on the current editing level (y-axis) are denoted by a yellow colour. You can change the current editing level by using the plus and minus keys, and then simply left click to add a block and right click to remove it. You can zoom in and out by pressing CTRL+I and CTRL+O. The Map Properties dialog allows you to change the name, dimensions, colours and other settings of the map. The Create Perimeter dialog automatically creates a wall around the map, based upon some templates.\par
+\par
+\b Flying around the Map\b0\par
+By pressing CTRL+W or by selecting Preview from the Edit menu, you can open a 3d view of the map. The camera appears initially in the centre of the map looking north. You can use the arrow keys to move the camera and the mouse with the left button down to look around. Use the right mouse button and move the mouse left and right to simulate a rising and setting sun.\par
+\par
+\b Next Steps\b0\par
+I would like to have the time limit of the game replaced by a rising and setting sun that casts shadows all across the blocks and the landscape. Maybe in another couple of years, eh?\par
+}
+ 

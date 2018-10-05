@@ -1,0 +1,211 @@
+body
+{
+	background-color: #f0c080;
+	font-family: "arial", "sans serif";
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 26pt;
+	margin: 24px 0;
+	padding: 0;
+}
+
+h2
+{
+	font-size: 19pt;
+	margin: 0;
+	padding: 0;
+}
+
+h3
+{
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	margin: 8px 0px;
+}
+
+a:link, a:visited, a:hover
+{
+	color: #482700;
+}
+
+a:active
+{
+	color: #ff0000;
+}
+
+span.or
+{
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+div.content
+{
+	background-color: #d4a25e;
+	background-position: top right;
+	background-repeat: no-repeat;
+	margin: 40px 24px;
+	padding: 24px 24px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #583000;
+}
+
+p
+{
+	margin: 16px;
+}
+
+.centre
+{
+	text-align: center;
+}
+
+table
+{
+	border-color: #000000;
+	border-style: solid;
+}
+
+td
+{
+	border-color: #603c18;
+	border-style: dotted;
+}
+
+td.separator
+{
+	width: 48px;
+}
+
+p.attributation
+{
+	font-size: 10pt;
+	font-style: italic;
+	font-weight: normal;
+	text-align: right;
+}
+
+a.top
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(gfx/icon/top.gif);
+	background-position: 0 0;
+	width: 48px;
+	height: 20px;
+	display: block;
+}
+
+.watchtower
+{
+	background-image: url(gfx/feature/01-the_watchtower.gif);
+}
+
+.phospher_henge
+{
+	background-image: url(gfx/feature/02-phospher_henge.gif);
+}
+
+.quai
+{
+	background-image: url(gfx/feature/03-the_quai.gif);
+}
+
+.table_antchair
+{
+	background-image: url(gfx/feature/04-table_antchair.gif);
+}
+
+.the_forum
+{
+	background-image: url(gfx/feature/05-the_forum.gif);
+}
+
+.the_anti_chamber
+{
+	background-image: url(gfx/feature/06-the_anti_chamber.gif);
+}
+
+.skaz_yandor
+{
+	background-image: url(gfx/feature/07-skaz_yandor.gif);
+}
+
+.the_pyramid
+{
+	background-image: url(gfx/feature/08-the_pyramid.gif);
+}
+
+.the_ancient
+{
+	background-image: url(gfx/feature/09-the_ancient.gif);
+}
+
+.oxymine
+{
+	background-image: url(gfx/feature/10-oxymine.gif);
+}
+
+.the_monument
+{
+	background-image: url(gfx/feature/11-the_monument.gif);
+}
+
+.ant_eden
+{
+	background-image: url(gfx/feature/12-ant_eden.gif);
+}
+
+.argons_leap
+{
+	background-image: url(gfx/feature/13-argons_leap.gif);
+}
+
+.artants_villa
+{
+	background-image: url(gfx/feature/14-artants_villa.gif);
+}
+
+.the_antimatter_cube
+{
+	background-image: url(gfx/feature/15-the_antimatter_cube.gif);
+}
+
+.droxtrap
+{
+	background-image: url(gfx/feature/16-droxtrap.gif);
+}
+
+.adriants_wall
+{
+	background-image: url(gfx/feature/17-adriants_wall.gif);
+}
+
+.bonzai_walk
+{
+	background-image: url(gfx/feature/18-bonzai_walk.gif);
+}
+
+.the_squarena
+{
+	background-image: url(gfx/feature/19-the_squarena.gif);
+}
+
+.the_crypt
+{
+	background-image: url(gfx/feature/20-the_crypt.gif);
+}

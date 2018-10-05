@@ -1,0 +1,7 @@
+*.dcu
+*.exe
+cd/
+bin/
+*.~*
+*.jbf
+*.ddp
